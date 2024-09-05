@@ -2,21 +2,6 @@ from pynput.keyboard import Key, Controller, Listener
 import pyautogui
 
 
-
- 
-# def show(key):
- 
-#     print('\nYou Entered {0}'.format( key))
- 
-#     if key == Key.delete:
-#         # Stop listener
-#         return False0987
- 
-# # Collect all event until released
-# with Listener(on_press = show) as listener:   
-#     listener.join()
-
-
 ctrl = Controller()
 
 st = 1
@@ -32,14 +17,6 @@ def hadoken(direction):
     pyautogui.keyDown('q')
     pyautogui.keyUp(direction)
     pyautogui.keyUp('q')
-    # pyautogui.hotkey('down','right',interval=ft)
-    # pyautogui.hotkey('down','right',interval=ft)
-    # pyautogui.hotkey('s',interval=st)
-    # pyautogui.hotkey('right','s',interval=timing)
-    # pyautogui.hotkey('s')
-               # pyautogui.hotkey('down','right',interval=timing)
-    # pyautogui.hotkey('right')
-    # pyautogui.hotkey('s')
     print("shinku hadsoken!")
 
 def tatsunaki(direction):
@@ -73,22 +50,6 @@ def shoryuken(direction):
     # pyautogui.keyDown('up')
     pyautogui.keyUp(direction)
     pyautogui.keyUp('q')
-
-    # pyautogui.press([direction, 'down', direction, 'q'],interval=st)
-    # pyautogui.press('down',interval=ft)
-    # # pyautogui.press(direction,interval=ft)
-    # pyautogui.hotkey(direction, 'q')
-    # pyautogui.keyDown(direction)
-    # pyautogui.keyUp(direction)
-    # pyautogui.keyDown('down')
-    # pyautogui.keyUp('down')
-    # pyautogui.hotkey(direction, 'q')
-    # pyautogui.keyUp(direction)
-    # pyautogui.keyDown('down')
-    # pyautogui.keyUp('down')
-    # pyautogui.keyDown('q')
-    # pyautogui.keyUp(direction)
-    # pyautogui.keyUp('q')
 
 def on_press(key):
     try:
